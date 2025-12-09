@@ -1,0 +1,424 @@
+:root {
+    /* Primary Colors */
+    --navy-850: hsl(217, 28%, 15%);
+    --navy-900: hsl(218, 28%, 13%);
+    --navy-950: hsl(216, 53%, 9%);
+    --navy-800: hsl(219, 30%, 18%);
+
+    /* Accent Colors */
+    --teal-200: hsl(176, 68%, 64%);
+    --cyan-500: hsl(198, 60%, 50%);
+    --red-500: hsl(0, 100%, 63%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --font-heading: "Raleway", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+
+    --fs-body: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--navy-850);
+    color: var(--white);
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--fs-body);
+}
+
+.fylo-landing-page {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.header {
+    display: flex;
+    font-family: var(--font-heading);
+    margin-bottom: 2rem;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HOVER & FOCUS STATES */
+
+/* Navbar */
+.navbar span:hover,
+.navbar span:focus {
+    color: var(--teal-200);
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Signup */
+.signup-btn:hover,
+.signup-btn:focus {
+    transform: scale(1.03);
+    opacity: 0.95;
+}
+
+/* Access button */
+.access-button:hover,
+.access-button:focus {
+    transform: scale(1.03);
+    opacity: 0.95;
+}
+
+/* Links */
+.more a:hover,
+.more a:focus {
+    text-decoration: underline;
+}
+
+.media:hover,
+.media:focus {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.navbar {
+    font-family: var(--font-heading);
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar span {
+    font-weight: 100;
+}
+
+.landing-page {
+    width: 100%;
+}
+
+.img-illustration {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-section {
+    font-family: var(--font-heading);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.intro-p {
+    text-align: center;
+    font-weight: 300;
+    margin: 2rem;
+}
+
+.signup-btn {
+    display: flex;
+    background-color: var(--cyan-500);
+    padding: 1.2rem 2rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 5rem;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    transform: ;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#landing-page-fylo {
+    background-color: var(--navy-900);
+}
+
+.landing-page-fylo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
+    gap: 5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.security-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.security-img {
+    width: 100px;
+}
+
+.security-p {
+    text-align: center;
+}
+
+/* productive-section  */
+
+.productive {
+    display: flex;
+    align-items: center;
+    padding: 0 0.8rem;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.reproductive-png {
+    width: 100%;
+    max-width: 650px;
+}
+
+.more {
+    margin-left: auto;
+    width: 600px;
+}
+
+.stay-reproductive {
+    font-size: 30px;
+}
+
+.second-text {
+    margin-top: 1rem;
+}
+
+.more a {
+    color: var(--teal-200);
+}
+
+.bg-quotes {
+    margin-top: 5rem;
+}
+
+.testimonial-section {
+    display: flex;
+    gap: 2rem;
+    padding: 0 0.8rem;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    background-color: var(--navy-800);
+    padding: 2rem 1.5rem 1rem;
+    border-radius: 2px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-p {
+    font-size: 18px;
+}
+
+.testimonial-id {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.profile {
+    width: 50px;
+    border-radius: 2rem;
+}
+
+.name {
+    margin-left: 0.5rem;
+}
+
+/* Input fields */
+.input:focus {
+    outline: 2px solid var(--teal-200);
+}
+
+/* Testimonial cards */
+.testimonial:hover,
+.testimonial:focus-within {
+    transform: translateY(-4px);
+    transition: all 0.2s ease;
+}
+
+
+.get-access-section {
+    width: 100%;
+    max-width: 800px;
+    background: var(--navy-850);
+    margin: 0 auto;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    top: 5rem;
+    z-index: 10;
+    position: relative;
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: auto;
+}
+
+
+h3 {
+    font-size: clamp(15px, 4vw, 30px);
+    white-space: nowrap;
+}
+
+.get-access {
+    font-size: clamp(10px, 3vw, 14px);
+}
+
+.access-input {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+}
+
+.input {
+    background-color: var(--white);
+    padding: 1rem;
+    width: 500px;
+    border-radius: 2rem;
+}
+
+.access-button {
+    background-color: var(--cyan-500);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.fylo-landing-page-footer {
+    background-color: var(--navy-950);
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding: 12rem 1rem 8rem;
+}
+
+.location-sec {
+    font-size: 20px;
+}
+
+#logo {
+    width: 250px;
+    padding-bottom: 2rem;
+}
+
+.location {
+    display: flex;
+    height: 240px;
+    gap: 1rem;
+}
+
+.location-svg {
+    height: 2rem;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding: 50px 20px;
+    margin-left: auto;
+}
+
+.social-handle {
+    display: flex;
+    gap: 1rem;
+}
+
+.media {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+
+@media (max-width: 768px) {
+
+    .fylo-landing-page {
+        padding: 1.5rem;
+    }
+
+    .landing-page-fylo {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .productive {
+        flex-wrap: wrap;
+    }
+
+    .testimonial-section {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .get-access-section {
+        max-width: 90%;
+        top: 7rem;
+    }
+
+    .access-input {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .access-button {
+        width: 500px;
+    }
+
+    .more {
+        width: 100%;
+    }
+
+    .fylo-landing-page-footer {
+        flex-wrap: wrap;
+    }
+
+    .location-sec {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-page {
+        flex-direction: column;
+        margin-right: auto;
+        flex: 1;
+    }
+
+    .social-handle {
+        justify-content: center;
+    }
+
+}
