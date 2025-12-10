@@ -374,6 +374,19 @@ h3 {
         gap: 2rem;
     }
 
+    .header {
+        gap: 2rem;
+    }
+
+    .logo {
+        max-width: 30%;
+    }
+
+    .navbar {
+        white-space: nowrap;
+        gap: 0.5rem;
+    }
+
     .productive {
         flex-wrap: wrap;
     }
